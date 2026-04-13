@@ -79,6 +79,8 @@ class _HomePageState extends State<HomePage> {
         debugPrint('Notification title: $notificationTitle');
         debugPrint('Notification body: $notificationBody');
         debugPrint('Data payload: ${message.data}');
+        debugPrint('Incoming asset: ${message.data['asset']}');
+        debugPrint('Resolved asset path: assets/images/$incomingAsset.png');
 
         if (!mounted) return;
 
